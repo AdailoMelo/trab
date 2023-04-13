@@ -3,7 +3,7 @@ Adailo de Melo sousa
 Witalo perera dos santos
 Camilly ribeiro figueiredo
 Pedro henrique moreira
-José gomes albuquerque moreira neto
+Josï¿½ gomes albuquerque moreira neto
 Francisco erico reis
 */
 
@@ -35,7 +35,7 @@ int main(){
 	printf("Segunda nota: ");
 	scanf("%f", & n2);
 	
-	while (n2 > 10 || n1 < 0) {
+	while (n2 > 10 || n2 < 0) {
 		printf("As notas vao de 0 a 10, digite a nota: ");
 		scanf("%f", & n2);
 	}
