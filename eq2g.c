@@ -26,9 +26,7 @@ int main(){
 	delta = pow(b, 2) - (4 * a * c); //b�-4ac
 	
 	//Calculando os X's
-	rdelta = sqrt(delta);
-	
-	
+	rdelta = sqrt(delta);	
 	
 	if (a != 0) {
 		if (delta >= 0){
@@ -41,9 +39,10 @@ int main(){
 				printf("Delta: %d \nS: {%d, %d}", rdelta, x1, x2);
 			}
 		} else {
-			printf("Nao existe raiz real, fazer com numeros complexos");
+			printf("Nao existe raiz real, fazer com numeros complexos\n");
+			//Continua
 		}
 	} else {
-		printf("Equacoes do segundo grau so existe se a for diferente de zero");
+		printf("Equacoes do segundo grau so existem se o valor de (a) for diferente de zero");
 	}
-	
+}
