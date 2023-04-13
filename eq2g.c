@@ -31,7 +31,7 @@ int main(){
 	
 	
 	if (a != 0) {
-			if (delta >= 0){
+		if (delta >= 0){
 			x1 = ((b * -1) + rdelta) / (2*a); //-b +/- raiz do delta / 2a
 			x2 = ((b * -1) - rdelta) / (2*a);
 			printf("Delta: %d \nX1: %d \nX2: %d \n", rdelta, x1, x2);
