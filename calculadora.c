@@ -11,7 +11,7 @@ int main(){
 	
 	if (escolha == 1) { //Soma
 		float a, b, soma;
-		int continua;
+		int continua, menu;
 
 		printf("Digite um numero para ser somado: ");
 		scanf("%f", &a);
@@ -31,9 +31,16 @@ int main(){
 		}
 
 		printf("Fim da soma! O resultado e %.2f", soma);
+		printf("\nQuer voltar para o menu inicial? 1 - para Sim ou 0 para - Nao: ");
+		scanf("%d", &menu);
+		if (menu == 1) {
+			main();
+		} else {
+			printf("Fim do programa");
+		}
 	} else if (escolha == 2) { //Subtra��o
 		float a, b, subtrai;
-		int continua;
+		int continua, menu;
 		printf("Digite um numero para ser subtraido: ");
 		scanf("%f", &a);
 		printf("Digite o outro numero a ser subtraido: ");
@@ -53,9 +60,16 @@ int main(){
 		}
 
 		printf("Fim da subtracao! O resultado final e: %.2f", subtrai);
+		printf("\nQuer voltar para o menu inicial? 1 - para Sim ou 0 para - Nao: ");
+		scanf("%d", &menu);
+		if (menu == 1) {
+			main();
+		} else {
+			printf("Fim do programa");
+		}
 	} else if (escolha == 3) { //Multiplica��o
 		float a, b, multiplica;
-		int continua;
+		int continua, menu;
 		printf("Digite um numero para ser multiplicado: ");
 		scanf("%f", &a);
 		printf("Digite o outro numero a ser multiplicado: ");
@@ -75,9 +89,16 @@ int main(){
 		}
 
 		printf("Fim da multiplicacao! O resultado final e: %.2f", multiplica);
+		printf("\nQuer voltar para o menu inicial? 1 - para Sim ou 0 para - Nao: ");
+		scanf("%d", &menu);
+		if (menu == 1) {
+			main();
+		} else {
+			printf("Fim do programa");
+		}
 	} else if (escolha == 4) { //Divis�o
 		float a, b, divide;
-		int continua;
+		int continua, menu;
 		printf("Digite um numero para ser o numerador: ");
 		scanf("%f", &a);
 		printf("Digite o outro numero a ser o denominador: ");
@@ -97,10 +118,17 @@ int main(){
 		}
 
 		printf("Fim da divisao! O resultado final e: %.2f", divide);
+		printf("\nQuer voltar para o menu inicial? 1 - para Sim ou 0 para - Nao: ");
+		scanf("%d", &menu);
+		if (menu == 1) {
+			main();
+		} else {
+			printf("Fim do programa");
+		}
 	} else if (escolha == 5){ //Radicia��o
 
 		float a, raiz;
-		int continua;
+		int continua, menu;
 		printf("Digite um numero para ver a sua raiz quadrada: ");
 		scanf("%f", &a);
 		raiz = sqrt(a);
@@ -116,10 +144,17 @@ int main(){
 		}
 
 		printf("Fim da radiciacao! O resultado final e: %.2f", raiz);
+		printf("\nQuer voltar para o menu inicial? 1 - para Sim ou 0 para - Nao: ");
+		scanf("%d", &menu);
+		if (menu == 1) {
+			main();
+		} else {
+			printf("Fim do programa");
+		}
 	} else if (escolha == 6) { //Exponencia��o
 		
 		float a, b, eleva;
-		int continua;
+		int continua, menu;
 
 		printf("Digite um numero para ser a base: ");
 		scanf("%f", &a);
@@ -140,8 +175,16 @@ int main(){
 		}
 
 		printf("Fim da exponenciacao! O resultado final e: %.2f", eleva);
+		printf("\nQuer voltar para o menu inicial? 1 - para Sim ou 0 para - Nao: ");
+		scanf("%d", &menu);
+		if (menu == 1) {
+			main();
+		} else {
+			printf("Fim do programa");
+		}
 	} else {
-		printf("Opcao invalida, reinicie e tente novamente \n");
+		printf("Opcao invalida, tente novamente \n");
+		main();
 	}
 
 	return 0;
