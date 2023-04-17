@@ -5,7 +5,13 @@ int main(){
  printf("CALCULADORA \n");
  //MENU
  int escolha; //Variavel para escolha
- printf("Escolha uma das opcoes abaixo \n [1] - ADICAO \n [2] - SUBTRACAO \n [3] MULTIPLICACAO \n [4] - DIVISAO \n [5] - RADICIACAO \n [6] - EXPONENCIACAO \n Escolha: "); //Ajustar em uma única linha na hora de copiar para o compilador
+ printf("Escolha uma das opcoes abaixo \n");
+ printf("1 - ADICAO \n");
+ printf("2 - SUBTRACAO \n");
+ printf("3 - MULTIPLICACAO \n");
+ printf("4 - DIVISAO \n");
+ printf("5 - RADICIACAO \n");
+ printf("6 - EXPONENCIACAO \n Escolha: ");
  scanf("%d", &escolha);
  if (escolha == 1) { //Se a escolha for soma
  float a, b, soma; //Criando variáveis do tipo float
@@ -153,7 +159,7 @@ int main(){
  scanf("%f", &b);
  eleva = pow(a, b); //eleva recebe a elevado a b
  printf("%.2f \n", eleva); //mostra resultado
- printf("Quer elevar %.2f usando um novo expoente? Digite 1 para Sim ou 0 Para Nao: ", eleva);
+ printf("Quer elevar usando um novo expoente? 1- Sim, 0 - Nao: ");
  scanf("%d", &continua);
  while (continua == 1) { //Repetição exponenciação
  printf("Digite o numero para ser o novo expoente: ");
